@@ -5,7 +5,8 @@ from urllib.request import urlopen as uReq
 import requests
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app = application
 
 @app.route("/", methods=['GET'])
 def homepage():
